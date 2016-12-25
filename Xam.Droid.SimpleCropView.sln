@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xam.Droid.SimpleCropView", "Xam.Droid.SimpleCropView\Xam.Droid.SimpleCropView.csproj", "{BE5F9EAA-0F17-44E4-A126-89882F104516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xam.Droid.SimpleCrop.Demo", "Xam.Droid.SimpleCrop.Demo\Xam.Droid.SimpleCrop.Demo.csproj", "{61EBE183-F03C-45BA-996E-84501F950E76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE5F9EAA-0F17-44E4-A126-89882F104516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE5F9EAA-0F17-44E4-A126-89882F104516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE5F9EAA-0F17-44E4-A126-89882F104516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE5F9EAA-0F17-44E4-A126-89882F104516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61EBE183-F03C-45BA-996E-84501F950E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61EBE183-F03C-45BA-996E-84501F950E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61EBE183-F03C-45BA-996E-84501F950E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61EBE183-F03C-45BA-996E-84501F950E76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
