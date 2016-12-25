@@ -45,7 +45,7 @@ namespace Com.Isseiaoki.Simplecropview.Callback
 		#endregion
 	}
 
-	public partial interface ICropCallback { }
+	
 
 	
 

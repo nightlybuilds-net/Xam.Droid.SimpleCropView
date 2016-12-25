@@ -61,12 +61,15 @@ namespace Xam.Droid.SimpleCrop.Demo
 			{
 				case Resource.Id.buttonDone:
 					var uri = Android.Net.Uri.FromFile(new Java.IO.File(this.CacheDir,"cropped"));
+
+					// using save callback
 					this._cropView.StartCrop(uri, new CropCallBack(), new SaveCallBack().AddSuccess((obj) => 
 					{
 						var intent = new Intent(this,typeof(DetailActivity));
 						intent.PutExtra("image",obj.ToString());
 						this.StartActivity(intent);
 					}));
+
 					break;
 				case Resource.Id.buttonFitImage:
 					this._cropView.SetCropMode(CropImageView.CropMode.FitImage);
