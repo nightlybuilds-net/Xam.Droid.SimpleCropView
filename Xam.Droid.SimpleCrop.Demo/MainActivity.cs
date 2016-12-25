@@ -69,7 +69,6 @@ namespace Xam.Droid.SimpleCrop.Demo
 						intent.PutExtra("image",obj.ToString());
 						this.StartActivity(intent);
 					}));
-
 					break;
 				case Resource.Id.buttonFitImage:
 					this._cropView.SetCropMode(CropImageView.CropMode.FitImage);

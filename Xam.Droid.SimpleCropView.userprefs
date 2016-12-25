@@ -1,13 +1,7 @@
 ﻿<Properties StartupConfiguration="{61EBE183-F03C-45BA-996E-84501F950E76}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Xam.Droid.SimpleCropView/Additions/CallBack.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Xam.Droid.SimpleCrop.Demo/MainActivity.cs">
     <Files>
-      <File FileName="Xam.Droid.SimpleCropView/Additions/CallBack.cs" Line="46" Column="2" />
-      <File FileName="Xam.Droid.SimpleCropView/Additions/CropCallBack.cs" Line="48" Column="2" />
-      <File FileName="Xam.Droid.SimpleCrop.Demo/MainActivity.cs" Line="73" Column="1" />
-      <File FileName="Xam.Droid.SimpleCropView/Additions/SaveCallBack.cs" Line="46" Column="2" />
-      <File FileName="Xam.Droid.SimpleCrop.Demo/DetailActivity.cs" Line="24" Column="1" />
-      <File FileName="Xam.Droid.SimpleCrop.Demo/Resources/AboutResources.txt" Line="1" Column="1" />
-      <File FileName="Xam.Droid.SimpleCropView/Additions/Abstract/ICallBack.cs" Line="1" Column="1" />
+      <File FileName="Xam.Droid.SimpleCrop.Demo/MainActivity.cs" Line="66" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

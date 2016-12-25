@@ -2,7 +2,9 @@ using System;
 
 namespace Com.Isseiaoki.Simplecropview.Callback
 {
-
+	/// <summary>
+	/// Save call back.
+	/// </summary>
 	public class SaveCallBack : Java.Lang.Object, ISaveCallback
 	{ 
 		Action _onError;
