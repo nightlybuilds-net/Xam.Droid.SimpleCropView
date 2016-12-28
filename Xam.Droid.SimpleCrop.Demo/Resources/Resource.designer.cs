@@ -179,44 +179,44 @@ namespace Xam.Droid.SimpleCrop.Demo
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080015
-			public const int button16_9 = 2131230741;
-			
-			// aapt resource value: 0x7f080011
-			public const int button1_1 = 2131230737;
+			// aapt resource value: 0x7f080016
+			public const int button16_9 = 2131230742;
 			
 			// aapt resource value: 0x7f080012
-			public const int button3_4 = 2131230738;
+			public const int button1_1 = 2131230738;
 			
 			// aapt resource value: 0x7f080013
-			public const int button4_3 = 2131230739;
+			public const int button3_4 = 2131230739;
 			
 			// aapt resource value: 0x7f080014
-			public const int button9_16 = 2131230740;
+			public const int button4_3 = 2131230740;
 			
-			// aapt resource value: 0x7f080018
-			public const int buttonCircle = 2131230744;
-			
-			// aapt resource value: 0x7f080016
-			public const int buttonCustom = 2131230742;
-			
-			// aapt resource value: 0x7f08001c
-			public const int buttonDone = 2131230748;
-			
-			// aapt resource value: 0x7f080010
-			public const int buttonFitImage = 2131230736;
-			
-			// aapt resource value: 0x7f080017
-			public const int buttonFree = 2131230743;
-			
-			// aapt resource value: 0x7f08001a
-			public const int buttonRotateLeft = 2131230746;
-			
-			// aapt resource value: 0x7f08001b
-			public const int buttonRotateRight = 2131230747;
+			// aapt resource value: 0x7f080015
+			public const int button9_16 = 2131230741;
 			
 			// aapt resource value: 0x7f080019
-			public const int buttonShowCircleButCropAsSquare = 2131230745;
+			public const int buttonCircle = 2131230745;
+			
+			// aapt resource value: 0x7f080017
+			public const int buttonCustom = 2131230743;
+			
+			// aapt resource value: 0x7f08001d
+			public const int buttonDone = 2131230749;
+			
+			// aapt resource value: 0x7f080011
+			public const int buttonFitImage = 2131230737;
+			
+			// aapt resource value: 0x7f080018
+			public const int buttonFree = 2131230744;
+			
+			// aapt resource value: 0x7f08001b
+			public const int buttonRotateLeft = 2131230747;
+			
+			// aapt resource value: 0x7f08001c
+			public const int buttonRotateRight = 2131230748;
+			
+			// aapt resource value: 0x7f08001a
+			public const int buttonShowCircleButCropAsSquare = 2131230746;
 			
 			// aapt resource value: 0x7f080000
 			public const int circle = 2131230720;
@@ -224,8 +224,8 @@ namespace Xam.Droid.SimpleCrop.Demo
 			// aapt resource value: 0x7f080001
 			public const int circle_square = 2131230721;
 			
-			// aapt resource value: 0x7f08000d
-			public const int cropImageView = 2131230733;
+			// aapt resource value: 0x7f08000e
+			public const int cropImageView = 2131230734;
 			
 			// aapt resource value: 0x7f080002
 			public const int custom = 2131230722;
@@ -236,11 +236,14 @@ namespace Xam.Droid.SimpleCrop.Demo
 			// aapt resource value: 0x7f080004
 			public const int free = 2131230724;
 			
-			// aapt resource value: 0x7f08001d
-			public const int layout_root = 2131230749;
+			// aapt resource value: 0x7f08001e
+			public const int layout_root = 2131230750;
 			
 			// aapt resource value: 0x7f08000a
 			public const int not_show = 2131230730;
+			
+			// aapt resource value: 0x7f08000d
+			public const int progress = 2131230733;
 			
 			// aapt resource value: 0x7f080005
 			public const int ratio_16_9 = 2131230725;
@@ -254,8 +257,8 @@ namespace Xam.Droid.SimpleCrop.Demo
 			// aapt resource value: 0x7f080008
 			public const int ratio_9_16 = 2131230728;
 			
-			// aapt resource value: 0x7f08001e
-			public const int result_image = 2131230750;
+			// aapt resource value: 0x7f08001f
+			public const int result_image = 2131230751;
 			
 			// aapt resource value: 0x7f08000b
 			public const int show_always = 2131230731;
@@ -266,11 +269,11 @@ namespace Xam.Droid.SimpleCrop.Demo
 			// aapt resource value: 0x7f080009
 			public const int square = 2131230729;
 			
-			// aapt resource value: 0x7f08000e
-			public const int tab_bar = 2131230734;
-			
 			// aapt resource value: 0x7f08000f
-			public const int tab_layout = 2131230735;
+			public const int tab_bar = 2131230735;
+			
+			// aapt resource value: 0x7f080010
+			public const int tab_layout = 2131230736;
 			
 			static Id()
 			{
@@ -286,10 +289,13 @@ namespace Xam.Droid.SimpleCrop.Demo
 		{
 			
 			// aapt resource value: 0x7f040000
-			public const int Main = 2130968576;
+			public const int fragment_progressdialog = 2130968576;
 			
 			// aapt resource value: 0x7f040001
-			public const int Result_Activity = 2130968577;
+			public const int Main = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int Result_Activity = 2130968578;
 			
 			static Layout()
 			{

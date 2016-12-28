@@ -8,6 +8,7 @@ using Com.Isseiaoki.Simplecropview.Callback;
 using Android.Graphics;
 using Android.Net;
 using Android.Content;
+using System.Threading.Tasks;
 
 namespace Xam.Droid.SimpleCrop.Demo
 {
@@ -39,15 +40,22 @@ namespace Xam.Droid.SimpleCrop.Demo
 		{
 			this.FindViewById<Button>(Resource.Id.buttonDone).Click += (sender, e) => 
 			{
+				this.ShowProgress();
 				var uri = Android.Net.Uri.FromFile(new Java.IO.File(this.CacheDir, "cropped"));
 
-				// using save callback
-				this._cropView.StartCrop(uri, new CropCallBack(), new SaveCallBack().AddSuccess((obj) =>
+				Task.Run(async () =>
 				{
-					var intent = new Intent(this, typeof(DetailActivity));
-					intent.PutExtra("image", obj.ToString());
-					this.StartActivity(intent);
-				}));
+					await Task.Delay(3000);
+					// using save callback
+					this._cropView.StartCrop(uri, new CropCallBack(), new SaveCallBack().AddSuccess((obj) =>
+					{
+						var intent = new Intent(this, typeof(DetailActivity));
+						intent.PutExtra("image", obj.ToString());
+						this.DismissProgress();
+						this.StartActivity(intent);
+					}));
+				});
+
 			};
 			this.FindViewById<Button>(Resource.Id.buttonFitImage).Click += (sender, e) => { this._cropView.SetCropMode(CropImageView.CropMode.FitImage); };
 			this.FindViewById<Button>(Resource.Id.button3_4).Click += (sender, e) => { this._cropView.SetCropMode(CropImageView.CropMode.Ratio34); };
@@ -64,7 +72,19 @@ namespace Xam.Droid.SimpleCrop.Demo
 		}
 
 	
+		public void ShowProgress()
+		{
+			ProgressDialogFragment f = ProgressDialogFragment.getInstance();
+			this.FragmentManager.BeginTransaction().Add(f, "ProgressDialog").CommitAllowingStateLoss();
+		}
 
+		public void DismissProgress()
+		{
+			//if (!IsAdded()) return;
+			var progressFragment = this.FragmentManager.FindFragmentByTag("ProgressDialog");
+			if (progressFragment == null) return;
+			this.FragmentManager.BeginTransaction().Remove(progressFragment).CommitAllowingStateLoss();
+		}
 
 	}
 }

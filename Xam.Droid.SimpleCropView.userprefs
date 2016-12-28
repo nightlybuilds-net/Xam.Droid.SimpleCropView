@@ -1,7 +1,10 @@
 ﻿<Properties StartupConfiguration="{61EBE183-F03C-45BA-996E-84501F950E76}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Xam.Droid.SimpleCrop.Demo/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="xam.droid.simplecropview Status">
     <Files>
-      <File FileName="Xam.Droid.SimpleCrop.Demo/MainActivity.cs" Line="66" Column="46" />
+      <File FileName="Xam.Droid.SimpleCrop.Demo/MainActivity.cs" Line="89" Column="3" />
+      <File FileName="Xam.Droid.SimpleCrop.Demo/ProgressDialogFragment.cs" Line="27" Column="1" />
+      <File FileName="Xam.Droid.SimpleCropView/Additions/SaveCallBack.cs" Line="29" Column="24" />
+      <File FileName="xam.droid.simplecropview Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
