@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="net.markjackmilian.simplecropview.xam_droid_simplecrop_demo">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="net.markjackmilian.xam.droid.simplecrop.demo">
 	<uses-sdk android:minSdkVersion="10" />
-	<application android:allowBackup="true" android:icon="@mipmap/icon" android:label="@string/app_name" android:theme="@style/AppTheme.Light.NoActionBar">
-	</application>
+	<application android:allowBackup="true" android:icon="@mipmap/icon" android:label="@string/app_name" android:theme="@style/AppTheme.Light.NoActionBar"></application>
 </manifest>

@@ -102,7 +102,6 @@
     <AndroidResource Include="Resources\values\dimens.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\layout\Result_Activity.axml" />
-    <AndroidResource Include="Resources\layout\fragment_progressdialog.axml" />
     <AndroidResource Include="Resources\drawable\ic_done_black_24dp.xml" />
     <AndroidResource Include="Resources\drawable\ic_photo_library_black_24dp.xml" />
     <AndroidResource Include="Resources\drawable\ic_rotate_left_black_24dp.xml" />
