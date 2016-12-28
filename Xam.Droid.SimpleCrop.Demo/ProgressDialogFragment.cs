@@ -1,18 +1,6 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Util;
-using Android.Views;
-using Android.Widget;
-using Android.Graphics.Drawables;
-using Android.Graphics;
 
 namespace Xam.Droid.SimpleCrop.Demo
 {
@@ -26,7 +14,6 @@ namespace Xam.Droid.SimpleCrop.Demo
 
 		public override Dialog OnCreateDialog(Bundle savedInstanceState)
 		{
-
 			ProgressDialog dialog = new ProgressDialog(this.Activity);
 			dialog.SetTitle("Please Wait");
 			dialog.SetMessage("Cropping..");
@@ -34,7 +21,7 @@ namespace Xam.Droid.SimpleCrop.Demo
 			dialog.SetProgressStyle(ProgressDialogStyle.Spinner);
 
 			return dialog;
-			                        
+
 		}
 
 		public static ProgressDialogFragment getInstance()

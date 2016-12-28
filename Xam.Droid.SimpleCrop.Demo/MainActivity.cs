@@ -2,13 +2,8 @@
 using Android.Widget;
 using Android.OS;
 using Com.Isseiaoki.Simplecropview;
-using System;
-using Android.Views;
 using Com.Isseiaoki.Simplecropview.Callback;
-using Android.Graphics;
-using Android.Net;
 using Android.Content;
-using System.Threading.Tasks;
 
 namespace Xam.Droid.SimpleCrop.Demo
 {
@@ -38,23 +33,18 @@ namespace Xam.Droid.SimpleCrop.Demo
 
 		private void BindViews()
 		{
-			this.FindViewById<Button>(Resource.Id.buttonDone).Click += (sender, e) => 
+			this.FindViewById<ImageButton>(Resource.Id.buttonDone).Click += (sender, e) =>
 			{
 				this.ShowProgress();
 				var uri = Android.Net.Uri.FromFile(new Java.IO.File(this.CacheDir, "cropped"));
 
-				Task.Run(async () =>
+				this._cropView.StartCrop(uri, new CropCallBack(), new SaveCallBack().AddSuccess((obj) =>
 				{
-					await Task.Delay(3000);
-					// using save callback
-					this._cropView.StartCrop(uri, new CropCallBack(), new SaveCallBack().AddSuccess((obj) =>
-					{
-						var intent = new Intent(this, typeof(DetailActivity));
-						intent.PutExtra("image", obj.ToString());
-						this.DismissProgress();
-						this.StartActivity(intent);
-					}));
-				});
+					var intent = new Intent(this, typeof(DetailActivity));
+					intent.PutExtra("image", obj.ToString());
+					this.DismissProgress();
+					this.StartActivity(intent);
+				}));
 
 			};
 			this.FindViewById<Button>(Resource.Id.buttonFitImage).Click += (sender, e) => { this._cropView.SetCropMode(CropImageView.CropMode.FitImage); };
@@ -64,14 +54,14 @@ namespace Xam.Droid.SimpleCrop.Demo
 			this.FindViewById<Button>(Resource.Id.button9_16).Click += (sender, e) => { this._cropView.SetCropMode(CropImageView.CropMode.Ratio916); };
 			this.FindViewById<Button>(Resource.Id.button16_9).Click += (sender, e) => { this._cropView.SetCropMode(CropImageView.CropMode.Ratio169); };
 			this.FindViewById<Button>(Resource.Id.buttonFree).Click += (sender, e) => { this._cropView.SetCropMode(CropImageView.CropMode.Free); };
-			this.FindViewById<Button>(Resource.Id.buttonRotateLeft).Click += (sender, e) => { this._cropView.RotateImage(CropImageView.RotateDegrees.RotateM90d); };
-			this.FindViewById<Button>(Resource.Id.buttonRotateRight).Click += (sender, e) => {this._cropView.RotateImage(CropImageView.RotateDegrees.Rotate90d); };
+			this.FindViewById<ImageButton>(Resource.Id.buttonRotateLeft).Click += (sender, e) => { this._cropView.RotateImage(CropImageView.RotateDegrees.RotateM90d); };
+			this.FindViewById<ImageButton>(Resource.Id.buttonRotateRight).Click += (sender, e) => { this._cropView.RotateImage(CropImageView.RotateDegrees.Rotate90d); };
 			this.FindViewById<Button>(Resource.Id.buttonCustom).Click += (sender, e) => { this._cropView.SetCustomRatio(7, 5); };
 			this.FindViewById<Button>(Resource.Id.buttonCircle).Click += (sender, e) => { this._cropView.SetCropMode(CropImageView.CropMode.Circle); };
 			this.FindViewById<Button>(Resource.Id.buttonShowCircleButCropAsSquare).Click += (sender, e) => { this._cropView.SetCropMode(CropImageView.CropMode.CircleSquare); };
 		}
 
-	
+
 		public void ShowProgress()
 		{
 			ProgressDialogFragment f = ProgressDialogFragment.getInstance();
@@ -80,7 +70,6 @@ namespace Xam.Droid.SimpleCrop.Demo
 
 		public void DismissProgress()
 		{
-			//if (!IsAdded()) return;
 			var progressFragment = this.FragmentManager.FindFragmentByTag("ProgressDialog");
 			if (progressFragment == null) return;
 			this.FragmentManager.BeginTransaction().Remove(progressFragment).CommitAllowingStateLoss();
