@@ -38,7 +38,7 @@ namespace Xam.Droid.SimpleCrop.Demo
 				this.ShowProgress();
 				var uri = Android.Net.Uri.FromFile(new Java.IO.File(this.CacheDir, "cropped"));
 
-				this._cropView.StartCrop(uri, new CropCallBack(), new SaveCallBack().AddSuccess((obj) =>
+				this._cropView.StartCrop(uri, new CropCallBack(), new SaveCallBack().OnSuccessDo((obj) =>
 				{
 					var intent = new Intent(this, typeof(DetailActivity));
 					intent.PutExtra("image", obj.ToString());

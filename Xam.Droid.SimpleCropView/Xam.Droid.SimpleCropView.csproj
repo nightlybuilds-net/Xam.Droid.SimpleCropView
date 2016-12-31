@@ -48,6 +48,7 @@
     <Compile Include="Additions\Abstract\ICallBack.cs" />
     <Compile Include="Additions\Abstract\ICropCallback.cs" />
     <Compile Include="Additions\Abstract\ISaveCallback.cs" />
+    <Compile Include="Additions\Abstract\ILoadCallback.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Additions\AboutAdditions.txt" />

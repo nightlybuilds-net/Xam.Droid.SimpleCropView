@@ -17,7 +17,7 @@ namespace Com.Isseiaoki.Simplecropview.Callback
 		/// </summary>
 		/// <returns>The error.</returns>
 		/// <param name="error">Error.</param>
-		public ICropCallback AddError(Action error)
+		public ICropCallback OnErrorDo(Action error)
 		{
 			this._onError = error;
 			return this;
