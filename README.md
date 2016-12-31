@@ -1,4 +1,4 @@
-# Xamarin Android PayPal binding library
+# Xamarin Android binding library for SimpleCropView
 
 This is a Xamarin.Android binding library for SimpleCropView.   
 Package is available on NuGet: [Xam.Droid.SimpleCropView](https://www.nuget.org/packages/Xam.Droid.SimpleCropView)
