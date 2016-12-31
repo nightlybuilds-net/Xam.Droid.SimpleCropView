@@ -2,7 +2,9 @@ using System;
 
 namespace Com.Isseiaoki.Simplecropview.Callback
 {
-
+	/// <summary>
+	/// Save call back.
+	/// </summary>
 	public class SaveCallBack : Java.Lang.Object, ISaveCallback
 	{ 
 		Action _onError;
@@ -13,7 +15,7 @@ namespace Com.Isseiaoki.Simplecropview.Callback
 		/// </summary>
 		/// <returns>The error.</returns>
 		/// <param name="error">Error.</param>
-		public ISaveCallback AddError(Action error)
+		public ISaveCallback OnErrorDo(Action error)
 		{
 			this._onError = error;
 			return this;
@@ -24,7 +26,7 @@ namespace Com.Isseiaoki.Simplecropview.Callback
 		/// </summary>
 		/// <returns>The success.</returns>
 		/// <param name="success">Success.</param>
-		public ISaveCallback AddSuccess(Action<Android.Net.Uri> success)
+		public ISaveCallback OnSuccessDo(Action<Android.Net.Uri> success)
 		{
 			this._onSuccess = success;
 			return this;
@@ -43,7 +45,7 @@ namespace Com.Isseiaoki.Simplecropview.Callback
 		#endregion
 	}
 
-	public partial interface ISaveCallback { }
+	
 	
 	
 }

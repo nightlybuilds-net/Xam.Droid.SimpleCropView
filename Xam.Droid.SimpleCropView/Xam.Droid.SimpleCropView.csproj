@@ -45,6 +45,10 @@
     <Compile Include="Additions\CallBack.cs" />
     <Compile Include="Additions\CropCallBack.cs" />
     <Compile Include="Additions\SaveCallBack.cs" />
+    <Compile Include="Additions\Abstract\ICallBack.cs" />
+    <Compile Include="Additions\Abstract\ICropCallback.cs" />
+    <Compile Include="Additions\Abstract\ISaveCallback.cs" />
+    <Compile Include="Additions\Abstract\ILoadCallback.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Additions\AboutAdditions.txt" />
@@ -57,6 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\simplecropview-1.1.4.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Additions\Abstract\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
 </Project>

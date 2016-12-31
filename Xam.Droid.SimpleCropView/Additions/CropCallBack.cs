@@ -3,6 +3,9 @@ using Android.Graphics;
 
 namespace Com.Isseiaoki.Simplecropview.Callback
 {
+	/// <summary>
+	/// Crop call back.
+	/// </summary>
 	public class CropCallBack : Java.Lang.Object, ICropCallback
 	{
 		Action _onError;
@@ -14,7 +17,7 @@ namespace Com.Isseiaoki.Simplecropview.Callback
 		/// </summary>
 		/// <returns>The error.</returns>
 		/// <param name="error">Error.</param>
-		public ICropCallback AddError(Action error)
+		public ICropCallback OnErrorDo(Action error)
 		{
 			this._onError = error;
 			return this;
@@ -45,7 +48,7 @@ namespace Com.Isseiaoki.Simplecropview.Callback
 		#endregion
 	}
 
-	public partial interface ICropCallback { }
+	
 
 	
 

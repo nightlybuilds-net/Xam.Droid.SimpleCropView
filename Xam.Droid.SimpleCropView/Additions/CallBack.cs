@@ -1,7 +1,10 @@
 ﻿using System;
 namespace Com.Isseiaoki.Simplecropview.Callback
 {
-	public class CallBack : Java.Lang.Object, ICallBack
+	/// <summary>
+	/// Call back for ICallBack and ILoadCallback
+	/// </summary>
+	public class CallBack : Java.Lang.Object, ICallBack, ILoadCallback
 	{
 		Action _onError;
 		Action _onSuccess;
@@ -12,7 +15,7 @@ namespace Com.Isseiaoki.Simplecropview.Callback
 		/// </summary>
 		/// <returns>The error.</returns>
 		/// <param name="error">Error.</param>
-		public ICallBack AddError(Action error)
+		public ICallBack OnErrorDo(Action error)
 		{
 			this._onError = error;
 			return this;
@@ -43,5 +46,5 @@ namespace Com.Isseiaoki.Simplecropview.Callback
 		#endregion
 	}
 
-	public partial interface ICallBack { }
+	
 }

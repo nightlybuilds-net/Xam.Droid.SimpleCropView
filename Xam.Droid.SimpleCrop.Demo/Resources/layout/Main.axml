@@ -4,6 +4,23 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
     <com.isseiaoki.simplecropview.CropImageView
         android:id="@+id/cropImageView"
         android:layout_weight="1"
@@ -52,7 +69,8 @@
                 android:padding="4dp"
                 android:text="FIT IMAGE"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.Button.Borderless" />
             <Button
                 android:id="@+id/button1_1"
                 android:layout_gravity="center_vertical"
@@ -60,7 +78,8 @@
                 android:padding="4dp"
                 android:text="SQUARE"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.Button.Borderless" />
             <Button
                 android:id="@+id/button3_4"
                 android:layout_gravity="center_vertical"
@@ -68,7 +87,8 @@
                 android:padding="4dp"
                 android:text="3:4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.Button.Borderless" />
             <Button
                 android:id="@+id/button4_3"
                 android:layout_gravity="center_vertical"
@@ -76,7 +96,8 @@
                 android:padding="4dp"
                 android:text="4:3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.Button.Borderless" />
             <Button
                 android:id="@+id/button9_16"
                 android:layout_gravity="center_vertical"
@@ -84,7 +105,8 @@
                 android:padding="4dp"
                 android:text="9:16"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.Button.Borderless" />
             <Button
                 android:id="@+id/button16_9"
                 android:layout_gravity="center_vertical"
@@ -92,7 +114,8 @@
                 android:padding="4dp"
                 android:text="16:9"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.Button.Borderless" />
             <Button
                 android:id="@+id/buttonCustom"
                 android:layout_gravity="center_vertical"
@@ -100,7 +123,8 @@
                 android:padding="4dp"
                 android:text="7:5"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.Button.Borderless" />
             <Button
                 android:id="@+id/buttonFree"
                 android:layout_gravity="center_vertical"
@@ -108,7 +132,8 @@
                 android:padding="4dp"
                 android:text="FREE"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.Button.Borderless" />
             <Button
                 android:id="@+id/buttonCircle"
                 android:layout_gravity="center_vertical"
@@ -116,7 +141,8 @@
                 android:padding="4dp"
                 android:text="CIRCLE"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.Button.Borderless" />
             <Button
                 android:id="@+id/buttonShowCircleButCropAsSquare"
                 android:layout_gravity="center_vertical"
@@ -124,7 +150,8 @@
                 android:padding="4dp"
                 android:text="CIRCLE_SQUARE"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.Button.Borderless" />
         </LinearLayout>
     </HorizontalScrollView>
     <View
@@ -145,26 +172,29 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_centerHorizontal="true">
-            <Button
+            <ImageButton
                 android:id="@+id/buttonRotateLeft"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="Left" />
-            <Button
+                android:src="@drawable/ic_rotate_left_black_24dp"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+            <ImageButton
                 android:id="@+id/buttonRotateRight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="Right" />
+                android:src="@drawable/ic_rotate_right_black_24dp"
+                android:background="?attr/selectableItemBackgroundBorderless" />
         </LinearLayout>
-        <Button
+        <ImageButton
             android:id="@+id/buttonDone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:padding="16dp"
-            android:text="Done" />
+            android:src="@drawable/ic_done_black_24dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
     </RelativeLayout>
 </LinearLayout>
