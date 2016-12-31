@@ -28,7 +28,7 @@ namespace Com.Isseiaoki.Simplecropview.Callback
 		/// </summary>
 		/// <returns>The success.</returns>
 		/// <param name="success">Success.</param>
-		public ICropCallback AddSuccess(Action<Bitmap> success)
+		public ICropCallback OnSuccessDo(Action<Bitmap> success)
 		{
 			this._onSuccess = success;
 			return this;
